@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:project_open_jung/Details/Sentinels/ESTJ/tab_view.dart';
 import 'package:project_open_jung/components/text_widgets/color_text.dart';
 import 'package:project_open_jung/components/text_widgets/heading_text.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -37,7 +38,12 @@ class ESTJ extends StatelessWidget {
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'ESTJ - The Executive',size: 27,),),
                 SizedBox(height: 20,),
                 HeadingText(heading: "ESTJs are dedicated traditionalists who thrive on taking control of initiatives and people. ESTJs are orderly, rule-following, and conscientious people who want to get things done. They approach tasks in a systematic, logical manner.",size: 18,),
-                TextButton(onPressed: null, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
+                TextButton(onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TabESTJ()),
+                  );
+                }, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'Your Test Score',size: 20,),),
                 SizedBox(height: 20,),
                 SingleChildScrollView(

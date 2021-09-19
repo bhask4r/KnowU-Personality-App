@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:project_open_jung/Details/Sentinels/ISTP/tab_view.dart';
 import 'package:project_open_jung/components/text_widgets/color_text.dart';
 import 'package:project_open_jung/components/text_widgets/heading_text.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -37,7 +38,12 @@ class ISTP extends StatelessWidget {
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'ISTP - The Virtuoso',size: 27,),),
                 SizedBox(height: 20,),
                 HeadingText(heading: "ISTPs are attentive craftsmen who are interested in troubleshooting and have a basic knowledge of mechanics. They approach their surroundings with a flexible logic, seeking practical answers to the issues they face. They are self-sufficient and flexible, and they engage with the environment in a self-directed and spontaneous way.",size: 18,),
-                TextButton(onPressed: null, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
+                TextButton(onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TabISTP()),
+                  );
+                }, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'Your Test Score',size: 20,),),
                 SizedBox(height: 20,),
                 SingleChildScrollView(

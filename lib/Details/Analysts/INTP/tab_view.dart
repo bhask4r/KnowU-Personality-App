@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:project_open_jung/Details/Analysts/INTJ/career.dart';
 import 'package:project_open_jung/Details/Analysts/INTJ/overview.dart';
+import 'package:project_open_jung/Details/Analysts/INTP/career.dart';
+import 'package:project_open_jung/Details/Analysts/INTP/overview.dart';
 import 'package:project_open_jung/Details/Diplomats/INFJ/career.dart';
 import 'package:project_open_jung/Details/Diplomats/INFJ/overview.dart';
 import 'package:project_open_jung/Details/Diplomats/INFP/career.dart';
 import 'package:project_open_jung/Details/Diplomats/INFP/overview.dart';
 import 'package:project_open_jung/components/text_widgets/color_text.dart';
 
-class TabINTJ extends StatelessWidget {
-  const TabINTJ({Key key}) : super(key: key);
+class TabINTP extends StatelessWidget {
+  const TabINTP({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -39,8 +41,8 @@ class TabINTJ extends StatelessWidget {
         ),
         body:  TabBarView(
           children: <Widget>[
-            OverviewINTJ(),
-            CareerINTJ(),
+            OverViewINTP(),
+            CareerINTP(),
           ],
         ),
       ),

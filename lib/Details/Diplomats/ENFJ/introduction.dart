@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:project_open_jung/Details/Diplomats/ENFJ/tab_view.dart';
 import 'package:project_open_jung/components/text_widgets/color_text.dart';
 import 'package:project_open_jung/components/text_widgets/heading_text.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -37,7 +38,12 @@ class ENFJ extends StatelessWidget {
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'ENFJ - The Protagonist',size: 27,),),
                 SizedBox(height: 20,),
                 HeadingText(heading: "Idealist organizers, ENFJs are motivated to put their vision of what is best for mankind into action. Because of their capacity to recognize potential in others and their charm in convincing others to their ideals, they often serve as catalysts for human development. They are committed to their beliefs and vision, and they are enthusiastic about the possibilities that exist for people.",size: 18,),
-                TextButton(onPressed: null, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
+                TextButton(onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TabENFJ()),
+                  );
+                }, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'Your Test Score',size: 20,),),
                 SizedBox(height: 20,),
                 SingleChildScrollView(

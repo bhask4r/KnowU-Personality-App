@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:project_open_jung/Details/Diplomats/INFP/tab_view.dart';
 import 'package:project_open_jung/components/text_widgets/color_text.dart';
 import 'package:project_open_jung/components/text_widgets/heading_text.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -37,7 +38,12 @@ class INFP extends StatelessWidget {
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'INFP - The Mediator',size: 27,),),
                 SizedBox(height: 20,),
                 HeadingText(heading: "INFPs are imaginative idealists, guided by their own core values and beliefs. To a Healer, possibilities are paramount; the realism of the moment is only of passing concern. They see potential for a better future, and pursue truth and meaning with their own individual flair.",size: 18,),
-                TextButton(onPressed: null, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
+                TextButton(onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TabINFP()),
+                  );
+                }, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'Your Test Score',size: 20,),),
                 SizedBox(height: 20,),
                 SingleChildScrollView(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:project_open_jung/Details/Explorers/ISFP/tab_view.dart';
 import 'package:project_open_jung/components/text_widgets/color_text.dart';
 import 'package:project_open_jung/components/text_widgets/heading_text.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -37,7 +38,12 @@ class ISFP extends StatelessWidget {
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'ISFP - The Adventurer',size: 27,),),
                 SizedBox(height: 20,),
                 HeadingText(heading: "ISFPs are gentle caretakers who live in the present moment and enjoy their surroundings with cheerful, low-key enthusiasm. They are flexible and spontaneous, and like to go with the flow to enjoy what life has to offer. ISFPs are quiet and unassuming, and may be hard to get to know. However, to those who know them well, the ISFP is warm and friendly, eager to share in life's many experiences.",size: 18,),
-                TextButton(onPressed: null, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
+                TextButton(onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TabISFP()),
+                  );
+                }, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'Your Test Score',size: 20,),),
                 SizedBox(height: 20,),
                 SingleChildScrollView(

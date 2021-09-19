@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:project_open_jung/Details/Sentinels/ISTJ/tab_view.dart';
 import 'package:project_open_jung/components/text_widgets/color_text.dart';
 import 'package:project_open_jung/components/text_widgets/heading_text.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -37,7 +38,12 @@ class ISTJ extends StatelessWidget {
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'ISTJ - The Logistician',size: 27,),),
                 SizedBox(height: 20,),
                 HeadingText(heading: "ISTJs are responsible organizers who are motivated to provide order to systems and institutions. They are clean and organized both inside and out, and everything they do follows a set of rules. ISTJs are dependable and responsible people who desire to preserve tradition and obey rules.",size: 18,),
-                TextButton(onPressed: null, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
+                TextButton(onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TabISTJ()),
+                  );
+                }, child: ColoredText(heading: 'Read More',size: 16,color: Color(0xff6449F9)),),
                 Align(alignment: Alignment.centerLeft,child: HeadingText(heading: 'Your Test Score',size: 20,),),
                 SizedBox(height: 20,),
                 SingleChildScrollView(
