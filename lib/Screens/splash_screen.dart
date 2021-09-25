@@ -211,11 +211,15 @@ class _SplashScreenState extends State<SplashScreen> {
             left: 20,
             child: Image.asset('images/red.png'),
           ),
+
           Positioned(
             top: 460/ 782 * height,
             left: 130,
             child: TextButton(
             onPressed: () {
+
+
+
               _SplashScreenState();
               switch (result) {
                 case 'INTJ':

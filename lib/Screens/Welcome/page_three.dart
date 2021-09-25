@@ -1,11 +1,11 @@
-import 'dart:ui' as ui;
+
 import 'package:black_hole_flutter/src/navigation.dart';
 import 'package:flutter/material.dart';
-import 'package:dashed_circle/dashed_circle.dart';
+
 import 'package:project_open_jung/components/text_widgets/color_text.dart';
 import 'package:project_open_jung/personality_test/personality_test.dart';
 import 'package:swipeable_page_route/swipeable_page_route.dart';
-import 'package:tinder_swipecard/tinder_swipecard.dart';
+
 
 class ChatPeople extends StatelessWidget {
   @override

@@ -1,7 +1,4 @@
-/// Flutter code sample for PageView
 
-// Here is an example of [PageView]. It creates a centered [Text] in each of the three pages
-// which scroll horizontally.
 
 import 'package:flutter/material.dart';
 import 'package:project_open_jung/Screens/Welcome/page_one.dart';

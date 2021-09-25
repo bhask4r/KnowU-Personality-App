@@ -38,7 +38,7 @@ dependencies:
   dotenv: ^2.0.0
   firebase_messaging: ^8.0.0-dev.14
   http: ^0.12.2
-  flutter_web_auth: ^0.2.4
+  flutter_web_auth: ^0.3.1
   cloud_firestore: ^0.16.0+1
   socket_io_client: ^0.9.12
   path: ^1.7.0
